@@ -62,3 +62,5 @@ $ ftp -a -v 127.0.0.1 3000
 所有 socket 对象 以其文件描述符为 key , socket 对象本身为 value, 存储在 `@handlers` 这个中央连接复用器中(Hash).
 事件分发器(主循环)使用 `select` 系统调用, 非阻塞地处理读写.
 
+
+> 详细内容请参考:  [https://www.jstorimer.com/pages/books](https://www.jstorimer.com/pages/books)
