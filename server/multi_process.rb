@@ -21,10 +21,11 @@ module FTP
     end
 
     def run
-      puts "服务启动"
+      puts "服务启动 MultiProcess"
 
       # 循环接受连接
       loop do
+        # accept 为阻塞操作, 直到有新连接时才 fork 子进程
         @client = @control_socket.accept
 
         pid = fork do

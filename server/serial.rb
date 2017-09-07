@@ -21,11 +21,12 @@ module FTP
     end
 
     def run
-      puts "服务启动"
+      puts "服务启动 Serial"
 
       # 循环接受连接
       loop do
 
+        # accept 为阻塞操作
         @client = @control_socket.accept
         respond "200 你好"
 
